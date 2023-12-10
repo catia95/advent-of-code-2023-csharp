@@ -51,16 +51,12 @@ public class DayThree
                     total = addNumbersParrallel(match, false, line3, total);
                     // Console.WriteLine("Total: " +  total + "\n");
                 }
+
                 //Reset for next iteration
                 line1 = line2;
                 line2 = line3;
                 line3 = "";
-                if (read.EndOfStream)
-                {
-                    Console.WriteLine("Answer: " + total);
-
-                    break;
-                }
+                Console.WriteLine("Answer: " + total);
             }
         }
     }
