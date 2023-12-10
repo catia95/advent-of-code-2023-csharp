@@ -1,8 +1,8 @@
 namespace advent_of_code_2023_csharp.day1;
 
-public class dayone
+public class DayOne
 {
-    public void run()
+    public static void Run()
     {
         Console.WriteLine("Day 1!");
 
@@ -29,7 +29,7 @@ public class dayone
                 {
                     continue;
                 }
-                
+
                 total += int.Parse(numbers[0] + numbers[^1].ToString());
             }
 
